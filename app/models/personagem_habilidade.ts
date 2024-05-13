@@ -5,6 +5,12 @@ export default class PersonagemHabilidade extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare personagemId: number
+
+  @column()
+  declare habilidadeId: number
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

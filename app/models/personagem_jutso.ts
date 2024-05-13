@@ -5,6 +5,12 @@ export default class PersonagemJutso extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare personagemId: number
+
+  @column()
+  declare jutsuId: number
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

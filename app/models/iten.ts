@@ -5,6 +5,15 @@ export default class Iten extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare nome: string
+
+  @column()
+  declare descricao: string
+
+  @column()
+  declare tipo: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

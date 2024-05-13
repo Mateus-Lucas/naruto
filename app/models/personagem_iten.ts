@@ -5,6 +5,12 @@ export default class PersonagemIten extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare personagemId: number
+
+  @column()
+  declare iitemId: number
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 
