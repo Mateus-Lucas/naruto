@@ -9,7 +9,7 @@ export default class PersonagemIten extends BaseModel {
   declare personagemId: number
 
   @column()
-  declare iitemId: number
+  declare itemId: number
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
