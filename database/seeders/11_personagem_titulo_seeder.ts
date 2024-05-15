@@ -6,8 +6,10 @@ export default class extends BaseSeeder {
     
     await PersonagemTitulo.createMany([
 
-      {personagemId: 1, tituloId: 1, data_inicio: new Date("2022-04-13"), data_fim: new Date("2022-04-13") },
-
+      { personagemId: 1, tituloId: 1, data_inicio: '2023-01-01', data_fim: '2023-12-31' },
+      { personagemId: 1, tituloId: 2, data_inicio: '2023-01-01', data_fim: '2023-12-31' },
+      { personagemId: 2, tituloId: 3, data_inicio: '2023-01-01', data_fim: '2023-12-31' },
+      
     ])
 
   }
