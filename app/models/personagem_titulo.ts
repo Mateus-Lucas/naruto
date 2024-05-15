@@ -12,10 +12,10 @@ export default class PersonagemTitulo extends BaseModel {
   declare tituloId: number
 
   @column()
-  declare data_inicio: DateTime
+  declare data_inicio: Date
 
   @column()
-  declare data_fim: DateTime
+  declare data_fim: Date
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
