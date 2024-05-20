@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column } from '@adonisjs/lucid/orm'
 
-export default class Personagen extends BaseModel {
+export default class Missoe extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
@@ -9,16 +9,10 @@ export default class Personagen extends BaseModel {
   declare nome: string
 
   @column()
-  declare idade: string
+  declare descricao: string
 
   @column()
-  declare aldeiaId: number
-
-  @column()
-  declare rankNum: string
-
-  @column()
-  declare missao_atual: string
+  declare dificuldade: string
 
   @column()
   declare status: string
