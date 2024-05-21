@@ -1,7 +1,7 @@
 import Personagen from '#models/personagen'
 import type { HttpContext } from '@adonisjs/core/http'
 
-export default class PersonagenController {
+export default class PersonagensController {
 
     async index({request}: HttpContext){
         const page = request.input('page', 1)
