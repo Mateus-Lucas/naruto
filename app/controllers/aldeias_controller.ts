@@ -13,7 +13,7 @@ export default class AldeiasController {
     async show({params}: HttpContext){
         return await Aldeia.query()
                             .where('id', params.id)
-                            .preload('personagen')
+                            .preload('personagens')
                             .first()
     }
 

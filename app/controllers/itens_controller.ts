@@ -14,7 +14,7 @@ export default class ItensController {
     async show({params}: HttpContext){
         return await Iten.query()
                             .where('id', params.id)
-                            .preload('personagen')
+                            .preload('personagens')
                             .first()
     }
 

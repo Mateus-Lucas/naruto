@@ -13,7 +13,7 @@ export default class TitulosController {
     async show({params}: HttpContext){
         return await Titulo.query()
                             .where('id', params.id)
-                            .preload('personagen')
+                            .preload('personagens')
                             .first()
     }
 
