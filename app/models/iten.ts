@@ -22,6 +22,8 @@ export default class Iten extends BaseModel {
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   declare updatedAt: DateTime
 
-  @manyToMany(()=>Personagen)
+  @manyToMany(()=>Personagen, {
+    pivotTable: 'personagem_itens'
+  })
   declare personagens: ManyToMany<typeof Personagen>
 }

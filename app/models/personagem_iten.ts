@@ -6,7 +6,7 @@ export default class PersonagemIten extends BaseModel {
   declare id: number
 
   @column()
-  declare personagemId: number
+  declare personagenId: number
 
   @column()
   declare itenId: number

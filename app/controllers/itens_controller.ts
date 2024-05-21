@@ -1,6 +1,6 @@
+import Iten from '#models/iten'
 import type { HttpContext } from '@adonisjs/core/http'
 
-import Iten from "#models/iten"
 
 export default class ItensController {
 

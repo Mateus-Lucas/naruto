@@ -14,7 +14,7 @@ export default class JutsosController {
     async show({params}: HttpContext){
         return await Jutso.query()
                             .where('id', params.id)
-                            .preload('personagen')
+                            .preload('tipo')
                             .first()
     }
 
