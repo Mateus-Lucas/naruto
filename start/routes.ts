@@ -24,7 +24,7 @@ router.get('/', async () => {
 
 router.resource('/titulos', TitulosController).apiOnly()
 router.resource('/itens', ItensController).apiOnly()
-router.resource('/justos', JutsosController).apiOnly()
+router.resource('/jutsos', JutsosController).apiOnly()
 router.resource('/missoes', MissoesController).apiOnly()
 router.resource('/aldeias', AldeiasController).apiOnly()
 router.resource('/habilidades', HabilidadesController).apiOnly()
