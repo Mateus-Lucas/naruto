@@ -1,6 +1,5 @@
+import Jutso from '#models/jutso'
 import type { HttpContext } from '@adonisjs/core/http'
-
-import Jutso from "#models/jutso"
 
 export default class JutsosController {
 
@@ -25,17 +24,17 @@ export default class JutsosController {
 
     async update({params, request}: HttpContext){
 
-        const jutso = await Jutso.findOrFail(params.id)
+        const jutsu = await Jutso.findOrFail(params.id)
         const dados = request.only(['nome', 'descricao', 'tipo', 'elemento'])
 
-        jutso.merge(dados)
-        return await jutso.save()
+        jutsu.merge(dados)
+        return await jutsu.save()
     }
 
     async destroy({params}: HttpContext){
-        const jutso = await Jutso.findOrFail(params.id)
+        const jutsu = await Jutso.findOrFail(params.id)
         
-        await jutso.delete()
-        return {msg: 'Registro deletado com sucesso', jutso}
+        await jutsu.delete()
+        return {msg: 'Registro deletado com sucesso', jutsu}
     }
 }
