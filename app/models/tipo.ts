@@ -1,5 +1,7 @@
 import { DateTime } from 'luxon'
-import { BaseModel, column } from '@adonisjs/lucid/orm'
+import { BaseModel, column, hasMany } from '@adonisjs/lucid/orm'
+import Jutso from './jutso.js'
+import type { HasMany } from '@adonisjs/lucid/types/relations'
 
 export default class Tipo extends BaseModel {
   @column({ isPrimary: true })
@@ -16,4 +18,7 @@ export default class Tipo extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   declare updatedAt: DateTime
+
+  @hasMany(()=>Jutso)
+  declare jutsus: HasMany<typeof Jutso>
 }

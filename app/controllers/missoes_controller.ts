@@ -13,7 +13,7 @@ export default class MissoesController {
     async show({params}: HttpContext){
         return await Missoe.query()
                             .where('id', params.id)
-                            .preload('personagen')
+                            .preload('personagens')
                             .first()
     }
 

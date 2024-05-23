@@ -13,7 +13,7 @@ export default class TiposController {
     async show({params}: HttpContext){
         return await Tipo.query()
                             .where('id', params.id)
-                            .preload('jutso')
+                            .preload('jutsus')
                             .first()
     }
 

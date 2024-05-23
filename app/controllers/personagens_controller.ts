@@ -13,12 +13,11 @@ export default class PersonagensController {
     async show({params}: HttpContext){
         return await Personagen.query()
                             .where('id', params.id)
-                            .preload('aldeias')
-                            .preload('habilidades')
+                            .preload('aldeia')
                             .preload('itens')
                             .preload('jutsos')
                             .preload('missoes')
-                            .preload('titulos')
+                            .preload('titulo')
                             .first()
     }
 

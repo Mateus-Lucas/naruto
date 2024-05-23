@@ -9,7 +9,7 @@ export default class PersonagemMissoe extends BaseModel {
   declare personagenId: number
 
   @column()
-  declare missaoId: number
+  declare missoeId: number
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime

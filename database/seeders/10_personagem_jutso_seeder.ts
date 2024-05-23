@@ -5,8 +5,8 @@ export default class extends BaseSeeder {
   async run() {
     
     await PersonagemJutso.createMany([
-      { personagenId: 1, jutsuId: 1 },
-      { personagenId: 2, jutsuId: 1 },
+      { personagenId: 1, jutsoId: 1 },
+      { personagenId: 2, jutsoId: 1 },
     ])
 
   }

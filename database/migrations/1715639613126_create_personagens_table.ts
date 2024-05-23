@@ -9,6 +9,7 @@ export default class extends BaseSchema {
       table.string('nome', 255).notNullable()
       table.string('idade').notNullable()
       table.integer('aldeia_id').unsigned().references('id').inTable('aldeias')
+      table.integer('titulo_id').unsigned().references('id').inTable('titulos')
       table.string('rank_num', 50).notNullable()
       table.string('missao_atual', 255).notNullable()
       table.string('status', 50).notNullable()

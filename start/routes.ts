@@ -14,7 +14,6 @@ import MissoesController from '#controllers/missoes_controller'
 import PersonagemItensController from '#controllers/personagem_itens_controller'
 import PersonagemJutsosController from '#controllers/personagem_jutsos_controller'
 import PersonagemMissoesController from '#controllers/personagem_missoes_controller'
-import PersonagemTitulosController from '#controllers/personagem_titulos_controller'
 import PersonagensController from '#controllers/personagens_controller'
 import TiposController from '#controllers/tipos_controller'
 import TitulosController from '#controllers/titulos_controller'
@@ -36,4 +35,3 @@ router.resource('/personagens', PersonagensController).apiOnly()
 router.resource('/personagem_itens', PersonagemItensController).apiOnly()
 router.resource('/personagem_jutsos', PersonagemJutsosController).apiOnly()
 router.resource('/personagem_missoes', PersonagemMissoesController).apiOnly()
-router.resource('/personagem_titulos', PersonagemTitulosController).apiOnly()
